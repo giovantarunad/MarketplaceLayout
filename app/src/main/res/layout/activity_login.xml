@@ -37,9 +37,9 @@
         android:id="@+id/welcome_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="24sp"
+        android:textSize="20dp"
         android:textColor="#313131"
-        android:text="Welcome Back"
+        android:text="Continuing as"
         app:layout_constraintTop_toBottomOf="@id/background_satu"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -50,65 +50,62 @@
         android:id="@+id/sub_welcome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="28dp"
         android:fontFamily="@font/futura_pt_demibold"
-        android:text="at largest Services marketplace"
+        android:text="Service Provider"
         android:textColor="#313131"
         android:textSize="15dp"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.477"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/background_satu" />
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:layout_marginEnd="304dp"
-        android:layout_marginRight="304dp"
-        android:fontFamily="@string/app_name"
-        android:text="Enter as a"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/button"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.643" />
-
     <Button
-        android:id="@+id/button"
-        android:layout_width="match_parent"
+        android:id="@+id/button3"
+        android:layout_width="155dp"
         android:layout_height="wrap_content"
-        android:background="@drawable/btn_red_large"
-        android:fontFamily="@font/futura_pt_demibold"
-        android:text="User"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/btn_white_small"
+        android:text="Login"
         android:textAllCaps="false"
-        android:textColor="#FFFF"
-        android:textSize="20dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/sub_welcome"
-        app:layout_constraintVertical_bias="0.454"
-        tools:layout_editor_absoluteX="0dp" />
+        android:textColor="#FF0303"
+        app:layout_constraintBottom_toTopOf="@+id/button5"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/button2"
-        android:layout_width="match_parent"
+        android:id="@+id/button5"
+        android:layout_width="375dp"
         android:layout_height="wrap_content"
-        android:text="service provider"
+        android:layout_marginBottom="152dp"
         android:background="@drawable/btn_white_large"
-        android:textAllCaps="false"
-        android:textColor="#F70404"
-        android:textSize="20dp"
+        android:drawableLeft="@drawable/google_logo"
+        android:text="Continue with Google"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="375dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_blue_large"
+        android:drawableLeft="@drawable/fb_logo"
+        android:text="Continue with facebook"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button"
-        app:layout_constraintVertical_bias="0.273" />
+        app:layout_constraintTop_toBottomOf="@+id/button5"
+        app:layout_constraintVertical_bias="0.168" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
         android:fontFamily="@string/app_name"
-        android:text="Enter as a guset"
+        android:text="Enter as a guest"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -116,4 +113,20 @@
         app:layout_constraintTop_toBottomOf="@+id/button2"
         app:layout_constraintVertical_bias="0.291" />
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_red_large"
+        android:text="Register"
+        android:textAllCaps="false"
+        android:textSize="15dp"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/button5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.924"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/welcome_text"
+        app:layout_constraintVertical_bias="0.777" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
